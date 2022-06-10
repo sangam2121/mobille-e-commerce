@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Product</title>
+    <!-- Fonts -->
+    <link href="https://fonts.googleapis.com/css?family=Roboto:300,400,500" rel="stylesheet">
+
+    <!-- font-awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+    <!-- css Links -->
+    <link rel="stylesheet" href="../css/home.css">
+    <link rel="stylesheet" href="../css/card.css">
+    <link href="../css/product.css" rel="stylesheet">
+
+
+</head>
+
+<body>
+    <!-- Header Section -->
+    <section id='header'>
+        <a href="home.html"><img src="../img/logo.png" class="logo" alt=""></a>
+
+        <!-- nav-bar -->
+        <div id="navbar" class="nav">
+            <ul id="navlinks">
+                <li><a class="active" href="home.html">Home</a></li>
+                <li><a href="shop.html">Shop</a></li>
+                <li><a href="blog.html">blog</a></li>
+                <li><a href="research.html">Research</a></li>
+                <li><a href="contact.html">Contact</a></li>
+                <li><a href="#"><i class="fa fa-shopping-cart"></i></a></li>
+                <li><a href="signup.html"><i class="fa fa-user-circle" id="user-icon"></i></a></li>
+
+            </ul>
+        </div>
+    </section>
+
+    <main class="container">
+
+        <div class="main-container">
+            <div class="product">
+                <!-- Images for slide animation -->
+                <img src="../img/blackphone.png" alt="" id="front-image">
+                <img src="../img/blackphone.png" alt="" id="back-image">
+
+
+                <div class="product-inner" id="productBox">
+                    <div class="product-front">
+                        <div class="upper">
+                            <h1>Samsung</h1>
+                        </div>
+                        <div class="bottom">
+                            <p>Samsung S6</p>
+                            <h2>Thinnest Screen</h2>
+                            <h1>200 <span>$</span></h1>
+                            <button type="button">Add to Cart</button>
+                            <div class="color-select">
+                                <div class="select-item">
+                                    <img src="../img/blackphone.png" alt="">
+                                </div>
+                                <div class="select-item">
+                                    <img src="../img/blackphone.png" alt="" onclick="flipRight()">
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="product-back">
+                        <div class="upper upper2">
+                            <h1>Samsung</h1>
+                        </div>
+                        <div class="bottom">
+                            <p>samsung s6</p>
+                            <h2>Thinnest Screen</h2>
+                            <h1>200 <span>$</span></h1>
+                            <button type="button">Add to Cart</button>
+                            <div class="color-select">
+                                <div class="select-item">
+                                    <img src="../img/blackphone.png" alt="" onclick="flipLeft()">
+                                </div>
+                                <div class="select-item">
+                                    <img src="../img/blackphone.png" alt="">
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="product-left"></div>
+                    <div class="product-right"></div>
+                </div>
+            </div>
+        </div>
+
+
+
+        <!-- Right Column -->
+        <div class="right-column">
+
+            <!-- Product Description -->
+            <div class="product-description">
+                <span>Samsung</span>
+                <h1>Samsung S6</h1>
+                <p>The preferred choice of a vast range of Users. Thin and smooth with high resolution. Last longing battery with good fast charging time.</p>
+            </div>
+
+            <!-- Product Configuration -->
+            <div class="product-configuration">
+
+                <!-- Cable Configuration -->
+                <div class="size-config">
+                    <span>Size configuration</span>
+
+                    <div class="size-choose">
+                        <button>Small</button>
+                        <button>Medium</button>
+                        <button>Large</button>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Product Pricing -->
+            <div class="product-price">
+                <span>200$</span>
+                <a href="#" class="cart-btn">Add to cart</a>
+            </div>
+        </div>
+    </main>
+
+
+    <script src="../js/product.js">
+    </script>
+    <!-- <script>
+        var productBox = document.getElementById("productBox");
+        var frontImage = document.getElementById("front-image");
+        var backImage = document.getElementById("back-image");
+
+
+        // Function to Flip the Card to The right
+        flipRight = () => {
+                productBox.style.transform = "rotateY(180deg)";
+                frontImage.style.left = "650px";
+                backImage.style.left = "20px";
+                frontImage.style.transform = "rotate(-30deg)";
+                backImage.style.transform = "rotate(0deg)";
+            }
+            // function to flip the card to the left
+        flipLeft = () => {
+            productBox.style.transform = "rotateY(0deg)";
+            frontImage.style.left = "20px";
+            backImage.style.left = "-650px";
+            frontImage.style.transform = "rotate(0deg)";
+            backImage.style.transform = "rotate(-30deg)";
+        }
+    </script> -->
+</body>
+
+</html>

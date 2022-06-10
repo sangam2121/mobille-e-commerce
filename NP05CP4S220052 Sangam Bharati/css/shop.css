@@ -1,0 +1,52 @@
+* {
+    margin: 0;
+    padding: 0;
+    font-family: 'poppins', sans-serif;
+}
+
+.shop-banner {
+    text-align: center;
+    border: 2px solid rgb(85, 83, 83);
+    padding-top: 30px;
+    padding-bottom: 30px;
+    margin: 20px;
+}
+
+.shop-banner h1 {
+    color: rgb(87, 88, 89);
+}
+
+.shop-banner h4 {
+    padding-top: 20px;
+}
+
+.shop-banner h4 span {
+    color: red;
+}
+
+.shop-banner p {
+    margin-right: 90px;
+}
+
+button {
+    padding: 12px 20px;
+    color: black;
+    background-color: rgb(10, 236, 153);
+    font-weight: bold;
+    font-size: 16px;
+    border: none;
+    border-radius: 8px;
+    transition: 0.3s;
+    text-transform: uppercase;
+}
+
+button:hover {
+    background-color: rgb(255, 255, 255);
+    color: rgb(0, 0, 0);
+    cursor: pointer;
+    border: none;
+}
+
+#product p {
+    margin-right: 100px;
+}

@@ -1,0 +1,66 @@
+* {
+    margin: 0;
+    padding: 0;
+    font-family: 'poppins' sans-serif;
+}
+
+
+/* Styling main-content class */
+
+.main-content {
+    display: flex;
+    justify-content: space-between;
+    justify-items: center;
+    align-items: center;
+    flex-basis: 50%;
+    margin: 30px;
+}
+
+.left {
+    margin-top: -50px;
+    height: 80vh;
+    width: 30%;
+    box-shadow: 5px 5px 15px rgb(68, 67, 67);
+}
+
+.left img {
+    width: 100%;
+}
+
+.right {
+    background: url("../img/tech.jpg");
+    background-size: cover;
+    height: 110vh;
+    width: 65%;
+    /* margin-right: 30px;
+    margin-left: 20px;
+     */
+}
+
+.title-text h4,
+h6 {
+    color: beige;
+}
+
+.right h1 {
+    margin-top: 30px;
+    padding-left: 70px;
+    text-decoration: overline;
+    color: aquamarine;
+}
+
+.right p,
+h4 {
+    padding: 7px;
+    text-align: justify;
+    color: rgb(145, 145, 137);
+}
+
+.right p {
+    font-size: 18px;
+}
+
+.right #adv {
+    text-align: justify;
+    padding-left: 85px;
+}
